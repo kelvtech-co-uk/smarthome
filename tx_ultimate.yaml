@@ -211,7 +211,7 @@ binary_sensor:
       - delay: ${button_on_time}
       - binary_sensor.template.publish:
           id: touchfield_3
-          state: ON
+          state: OFF
       - script.execute: refresh_led_default
 
   - platform: template
