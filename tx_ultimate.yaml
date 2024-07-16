@@ -4,9 +4,9 @@ substitutions:
 
   relay_count: "3"
 
-  toggle_relay_1_on_touch: "true"
+  toggle_relay_1_on_touch: "false"
   toggle_relay_2_on_touch: "true"
-  toggle_relay_3_on_touch: "true"
+  toggle_relay_3_on_touch: "false"
 
   vibra_time: 150ms
   button_on_time: 500ms
@@ -18,12 +18,12 @@ substitutions:
   nightlight_brightness: "0.2"
   nightlight_color: "{80,70,0}"
 
-  latitude: "50.123456°"
-  longitude: "5.654321°"
+  latitude: "53.822865°"
+  longitude: "-2.217717°"
 
   touch_brightness: "1"
   touch_color: "{0,100,100}"
-  touch_effect: "Scan"
+  touch_effect: "Rainbow"
 
   long_press_brightness: "1"
   long_press_color: "{100,0,0}"
