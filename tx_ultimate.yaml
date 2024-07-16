@@ -74,7 +74,7 @@ esphome:
     then:
       - binary_sensor.template.publish:
           id: touchfield_1
-          state: OFF
+          state: ON
       - binary_sensor.template.publish:
           id: touchfield_2
           state: OFF
@@ -113,7 +113,7 @@ logger:
     uart_debug: INFO
 
 dashboard_import:
-  package_import_url: github://SmartHome-yourself/sonoff-tx-ultimate-for-esphome/tx_ultimate.yaml@main
+  package_import_url: github:/KillerKelvUK/smarthome-sonoff-tx/tx_ultimate.yaml@main
   import_full_config: false
 
 api:
@@ -259,7 +259,7 @@ switch:
     id: relay_1
     name: "${friendly_name} L1"
     pin: ${relay_1_pin}
-    restore_mode: RESTORE_DEFAULT_OFF
+    restore_mode: RESTORE_DEFAULT_ON
     on_turn_on:
       then:
         - script.execute: refresh_led_default
