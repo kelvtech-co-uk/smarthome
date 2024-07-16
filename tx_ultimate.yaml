@@ -2,7 +2,7 @@ substitutions:
   name: "shys-tx-ultimate"
   friendly_name: "TX Ultimate"
 
-  relay_count: "2"
+  relay_count: "3"
 
   toggle_relay_1_on_touch: "true"
   toggle_relay_2_on_touch: "true"
