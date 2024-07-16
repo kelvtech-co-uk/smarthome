@@ -1,6 +1,6 @@
 substitutions:
-  name: "shys-tx-ultimate"
-  friendly_name: "TX Ultimate"
+  name: "sonoff-tx-ultimate-t5-3c-86-6db700"
+  friendly_name: "TX Ultimate Front Door"
 
   relay_count: "3"
 
@@ -66,7 +66,7 @@ esphome:
   name: ${name}
   friendly_name: ${friendly_name}
   project:
-    name: smarthomeyourself.tx_ultimate
+    name: kelvtech.tx_ultimate
     version: "1.0"
 
   on_boot:
@@ -96,10 +96,10 @@ esphome:
       - script.execute: refresh_led_default
       - script.execute: refresh_nightlight
 
-esp32:
-  board: esp32dev
-  framework:
-    type: arduino
+# esp32:
+#   board: esp32dev
+#   framework:
+#     type: arduino
 
 logger:
 #  hardware_uart: UART2
@@ -121,8 +121,6 @@ api:
 ota:
 
 wifi:
-  ap:
-    password: "12345678"
     
 improv_serial:
 
@@ -132,7 +130,7 @@ external_components:
 #  - source: /config/esphome/my_components
   - source:
       type: git
-      url: https://github.com/SmartHome-yourself/sonoff-tx-ultimate-for-esphome
+      url: https://github.com/KillerKelvUK/smarthome-sonoff-tx
       ref: main
     components: [tx_ultimate_touch]
     
