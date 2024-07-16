@@ -113,7 +113,7 @@ logger:
     uart_debug: INFO
 
 # dashboard_import:
-#   package_import_url: github:/KillerKelvUK/smarthome-sonoff-tx/tx_ultimate.yaml@main
+#   package_import_url: github2:/KillerKelvUK/smarthome-sonoff-tx/tx_ultimate.yaml@main
 #   import_full_config: false
 
 api:
