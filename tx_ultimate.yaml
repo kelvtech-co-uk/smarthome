@@ -74,7 +74,7 @@ esphome:
     then:
       - binary_sensor.template.publish:
           id: touchfield_1
-          state: ON
+          state: OFF
       - binary_sensor.template.publish:
           id: touchfield_2
           state: OFF
@@ -211,7 +211,7 @@ binary_sensor:
       - delay: ${button_on_time}
       - binary_sensor.template.publish:
           id: touchfield_3
-          state: OFF
+          state: ON
       - script.execute: refresh_led_default
 
   - platform: template
