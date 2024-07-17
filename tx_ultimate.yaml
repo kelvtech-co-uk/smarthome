@@ -1,12 +1,12 @@
 substitutions:
   name: "sonoff-tx-ultimate-t5-3c-86-6db700"
   friendly_name: "TX Ultimate Front Door"
-# test
+
   relay_count: "3"
 
   toggle_relay_1_on_touch: "false"
   toggle_relay_2_on_touch: "true"
-  toggle_relay_3_on_touch: "false"
+  toggle_relay_3_on_touch: "true"
 
   vibra_time: 150ms
   button_on_time: 500ms
