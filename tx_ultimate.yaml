@@ -1,7 +1,7 @@
 substitutions:
   name: "sonoff-tx-ultimate-t5-3c-86-6db700"
   friendly_name: "TX Ultimate Front Door"
-
+# test
   relay_count: "3"
 
   toggle_relay_1_on_touch: "false"
