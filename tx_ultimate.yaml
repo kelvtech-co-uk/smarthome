@@ -6,7 +6,7 @@ substitutions:
 
   toggle_relay_1_on_touch: "false"
   toggle_relay_2_on_touch: "true"
-  toggle_relay_3_on_touch: "true"
+  toggle_relay_3_on_touch: "false"
 
   vibra_time: 150ms
   button_on_time: 500ms
