@@ -6,7 +6,7 @@ blueprint:
     I've taken this blueprint from https://gist.github.com/sandervv/f326ff3b2bcb945b5a9dc0bfb82e3308 who in tern took it from https://gist.github.com/stefanroelofs/775e2e0a3cdb3d72a9451fb247492d59.  See these repos for more general code to base your blueprints from as this is a customised version.
     
   domain: automation
-  source_url: https://github.com/KillerKelvUK/smarthome
+  source_url: https://github.com/kelvtech-co-uk/smarthome
 
   # Define the inputs for the blueprint
   input:
