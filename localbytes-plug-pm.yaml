@@ -1,8 +1,8 @@
 # These substitutions allow the end user to override certain values
 substitutions:
   # Device Names
-  name: "localbytes-plug-pm"
-  friendly_name: "Localbytes Plug PM"
+  # name: "localbytes-plug-pm"
+  # friendly_name: "Localbytes Plug PM"
   
   # Icon
   main_icon: "power-socket-uk"
