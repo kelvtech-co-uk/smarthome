@@ -14,13 +14,13 @@ substitutions:
 
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
-  name_add_mac_suffix: "false"
+  # name_add_mac_suffix: "false"
 
   # This will allow for (future) project identification,
   # configuration and updates.
-  project:
-    name: "localbytes.plug-pm"
-    version: "1.6.3"
+  # project:
+  #   name: kelvtech-co-uk.localbytes.plug-pm
+  #   version: "1.6.3"
 
   # on_boot:
   #   priority: 300
