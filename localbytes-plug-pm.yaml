@@ -27,7 +27,7 @@ substitutions:
     then:
       #Signal to the template switches that their initial values have been loaded      
       globals.set:
-        id: setupComplete
+        id: "setupComplete"
         value: "true"
 
 # This should point to the public location of this yaml file.
