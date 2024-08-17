@@ -18,9 +18,9 @@ substitutions:
 
   # This will allow for (future) project identification,
   # configuration and updates.
-  # project:
-  #   name: localbytes.plug-pm
-  #   version: "1.6.3"
+  project:
+    name: localbytes.plug-pm
+    version: "1.6.3"
 
   # on_boot:
   #   priority: 300
