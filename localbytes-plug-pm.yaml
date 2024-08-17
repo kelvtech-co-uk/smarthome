@@ -1,8 +1,8 @@
 # These substitutions allow the end user to override certain values
 substitutions:
   # Device Names
-  # name: "localbytes-plug-pm"
-  # friendly_name: "Localbytes Plug PM"
+  name: "localbytes-plug-pm"
+  friendly_name: "Localbytes Plug PM"
   
   # Icon
   main_icon: "power-socket-uk"
@@ -14,21 +14,21 @@ substitutions:
 
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
-  # name_add_mac_suffix: "false"
+  name_add_mac_suffix: "false"
 
   # This will allow for (future) project identification,
   # configuration and updates.
-  # project:
-  #   name: kelvtech-co-uk.localbytes.plug-pm
-  #   version: "1.6.3"
+  project:
+    name: kelvtech-co-uk.localbytes.plug-pm
+    version: "1.6.3"
 
-  # on_boot:
-  #   priority: 300
-  #   then:
-  #     #Signal to the template switches that their initial values have been loaded      
-  #     globals.set:
-  #       id: "setupComplete"
-  #       value: "true"
+  on_boot:
+    priority: 300
+    then:
+      #Signal to the template switches that their initial values have been loaded      
+      globals.set:
+        id: "setupComplete"
+        value: "true"
 
 # This should point to the public location of this yaml file.
 dashboard_import:
