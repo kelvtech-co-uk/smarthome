@@ -1,3 +1,5 @@
+# Edited version of LocalBytes device yaml
+
 # These substitutions allow the end user to override certain values
 substitutions:
   # Device Names
