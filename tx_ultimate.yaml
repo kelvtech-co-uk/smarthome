@@ -192,7 +192,7 @@ binary_sensor:
           condition:
             lambda: "return ${toggle_relay_2_on_touch};"
           then:
-            - switch.toggle: relay_3
+            - switch.toggle: relay_2
       - delay: ${button_on_time}
       - binary_sensor.template.publish:
           id: touchfield_2
