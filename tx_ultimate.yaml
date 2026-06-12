@@ -435,7 +435,6 @@ media_player:
       format: WAV
       num_channels: 1
       sample_rate: 16000
-      format: WAV
 
 uart:
   tx_pin: ${uart_tx_pin}
