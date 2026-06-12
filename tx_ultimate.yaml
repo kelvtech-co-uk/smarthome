@@ -415,7 +415,7 @@ speaker:
     i2s_audio_id: audio_i2s
     i2s_dout_pin: ${audio_sdata_pin}
     dac_type: external
-    i2s_comm_fmt: lsb
+    i2s_comm_fmt: i2s_lsb
     sample_rate: 16000
     bits_per_sample: 16bit
     channel: mono
