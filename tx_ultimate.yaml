@@ -1,4 +1,7 @@
 substitutions:
+  name: tx-ultimate-t5-3c-86-6db700
+  friendly_name: Sonoff TX Ultimate (T5-3C-86) 6db700
+
   relay_count: "3"
 
   toggle_relay_1_on_touch: "false"
@@ -419,6 +422,7 @@ speaker:
     sample_rate: 16000
     bits_per_sample: 16bit
     channel: mono
+    buffer_duration: 100ms
 
 media_player:
   - platform: speaker
@@ -429,6 +433,7 @@ media_player:
       speaker: speaker_out
       num_channels: 1
       sample_rate: 16000
+      buffer_size: 50000
 
 uart:
   tx_pin: ${uart_tx_pin}
