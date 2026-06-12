@@ -1,7 +1,4 @@
 substitutions:
-  name: "sonoff-tx-ultimate-t5-3c-86-6db700"
-  friendly_name: "TX Ultimate Front Door"
-
   relay_count: "3"
 
   toggle_relay_1_on_touch: "false"
@@ -61,13 +58,12 @@ substitutions:
 
   touchpanel_power_pin: GPIO5
 
-
 esphome:
   name: ${name}
   friendly_name: ${friendly_name}
   project:
     name: kelvtech.tx_ultimate
-    version: "1.0"
+    version: "2.0"
 
   on_boot:
     priority: -100
@@ -96,11 +92,6 @@ esphome:
       - script.execute: refresh_led_default
       - script.execute: refresh_nightlight
 
-# esp32:
-#   board: esp32dev
-#   framework:
-#     type: arduino
-
 logger:
 #  hardware_uart: UART2
   level: DEBUG
@@ -112,20 +103,6 @@ logger:
     tx_ultimate_touch: INFO
     uart_debug: INFO
 
-# dashboard_import:
-#   package_import_url: github:/kelvtech-co-uk/smarthome/tx_ultimate.yaml@main
-#   import_full_config: false
-
-api:
-
-ota:
-
-wifi:
-    
-improv_serial:
-
-captive_portal:
-
 external_components:
 #  - source: /config/esphome/my_components
   - source:
@@ -134,8 +111,6 @@ external_components:
       ref: main
     components: [tx_ultimate_touch]
     
-
-
 globals:
   - id: nightlight_color
     type: int [3]
@@ -165,8 +140,6 @@ globals:
     type: int [3]
     restore_value: no
     initial_value: ${touch_color}    
-
-
 
 binary_sensor:
   - platform: template
@@ -432,20 +405,31 @@ light:
           speed: 10
           width: 20
 
-media_player:
-  - platform: i2s_audio
-    id: media_out
-    name: ${friendly_name} Player
-    dac_type: external
-    i2s_dout_pin: ${audio_sdata_pin}
-    i2s_audio_id: audio_i2s
-    i2s_comm_fmt: lsb
-    mode: mono
-
 i2s_audio:
   id: audio_i2s
   i2s_lrclk_pin: ${audio_lrclk_pin}
   i2s_bclk_pin: ${audio_bclk_pin}
+
+speaker:
+  - platform: i2s_audio
+    id: speaker_out
+    i2s_audio_id: audio_i2s
+    i2s_dout_pin: ${audio_sdata_pin}
+    dac_type: external
+    i2s_comm_fmt: lsb
+    sample_rate: 16000
+    bits_per_sample: 16bit
+    channel: mono
+
+media_player:
+  - platform: speaker
+    id: media_out
+    name: ${friendly_name} Player
+    volume_increment: 0.05
+    media_pipeline:
+      speaker: speaker_out
+      num_channels: 1
+      sample_rate: 16000
 
 uart:
   tx_pin: ${uart_tx_pin}
