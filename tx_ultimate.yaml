@@ -425,7 +425,7 @@ media_player:
     id: media_out
     name: ${friendly_name} Player
     volume_increment: 0.05
-    media_pipeline:
+    announcement_pipeline:
       speaker: speaker_out
       num_channels: 1
       sample_rate: 16000
