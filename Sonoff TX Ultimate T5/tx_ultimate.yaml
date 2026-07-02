@@ -62,12 +62,11 @@ substitutions:
   touchpanel_power_pin: GPIO5
 
 esphome:
-  name: ${name}
-  friendly_name: ${friendly_name}
-  project:
-    name: kelvtech.tx_ultimate
-    version: "2.0"
-
+  # name: ${name}
+  # friendly_name: ${friendly_name}
+  # project:
+  #   name: kelvtech.tx_ultimate
+  #   version: "2.0"
   on_boot:
     priority: -100
     then:
@@ -112,6 +111,7 @@ external_components:
       type: git
       url: https://github.com/kelvtech-co-uk/smarthome
       ref: main
+      path: "Sonoff TX Ultimate T5/components"
     components: [tx_ultimate_touch]
     
 globals:
