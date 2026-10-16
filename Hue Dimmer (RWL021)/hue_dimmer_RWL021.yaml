@@ -94,7 +94,8 @@ blueprint:
       selector:
         action:
 
-mode: restart
+# mode: restart
+mode: queued
 max_exceeded: silent
 
 # Trigger the automation when the selected dimmer remote sends an event
